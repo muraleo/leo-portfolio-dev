@@ -11,7 +11,7 @@ const home = props => {
 					</h1>
 					<h1>A full-stack developer</h1>
 				</div>
-				<a href="#">View More</a>
+				<a href="#about">View More</a>
 			</div>
 		</div>
 	);
