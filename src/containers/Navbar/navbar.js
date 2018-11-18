@@ -8,22 +8,22 @@ class Navbar extends Component {
 		nav_buttons: [
 			{
 				name: "home",
-				link: "#",
+				link: "#home",
 				active: true
 			},
 			{
 				name: "about",
-				link: "#",
+				link: "#about",
 				active: false
 			},
 			{
 				name: "projects",
-				link: "#",
+				link: "#projects",
 				active: false
 			},
 			{
 				name: "contact",
-				link: "#",
+				link: "#contact",
 				active: false
 			}
 		]

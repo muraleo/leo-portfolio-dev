@@ -3,7 +3,7 @@ import classes from "./home.module.css";
 
 const home = props => {
 	return (
-		<div className={classes.home}>
+		<div id="home" className={classes.home}>
 			<div className={classes.hero_text_box}>
 				<div className={classes.title}>
 					<h1>
