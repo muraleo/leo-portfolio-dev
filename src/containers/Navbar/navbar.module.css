@@ -5,6 +5,7 @@
     background-color: #333;
     height: 60px;
     text-align: left;
+    transition: height 0.3s;
 }
 
 .Navbar li {
@@ -23,6 +24,7 @@
     border-top: 2px solid transparent;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
+    transition-property: border-top, border-bottom, color;
 }
 
 .Navbar li a:hover,
@@ -50,38 +52,37 @@
 
 @media (max-width: 767px) {
     .Navbar .toggle_show{
-        display: block;
+        visibility: visible;
+        transition: visibility 0.3s;
+        transition-delay: 0.3s;
     }
     
-    /* .Navbar .toggle_hide{
-        display: none;
-    } */
-    
-    .toggle_height{
-        height: 180px;
-    }
     .Navbar{
         display: flex;
         flex-direction: column;
         padding: 0px;
-        z-index: 100;
     }
 
     .Navbar li{
         width: 100%;
         background-color: #333;
         margin: 0;
+        padding-bottom: 20px;
         text-align: center;
-        display: none;
+        visibility: hidden;
     }
 
     .toggle svg{
         display: block;
     }
+
+    .toggle_height{
+        height: 230px;
+    }
 }
 
 @media (min-width: 768px) {
     .toggle svg{
-        display: none;
+        visibility: hidden;
     }
 }

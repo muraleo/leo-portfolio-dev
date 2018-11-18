@@ -13,14 +13,13 @@ class Navbar extends Component {
 		});
 	};
 	render() {
-		let navbar_class = this.state.toggle
+		let navbar_classes = this.state.toggle
 			? [classes.Navbar, classes.toggle_height].join(" ")
 			: classes.Navbar;
-
-		let navbar_li_class = this.state.toggle ? classes.toggle_show : "";
+		let navbar_li_classes = this.state.toggle ? classes.toggle_show : "";
 		return (
 			<nav>
-				<ul className={navbar_class}>
+				<ul className={navbar_classes}>
 					<a
 						class={classes.toggle}
 						onClick={() => this.toggleNavbar()}
@@ -28,16 +27,16 @@ class Navbar extends Component {
 					>
 						<FaBars />
 					</a>
-					<li className={navbar_li_class}>
+					<li className={navbar_li_classes}>
 						<a href="#">Home</a>
 					</li>
-					<li className={navbar_li_class}>
+					<li className={navbar_li_classes}>
 						<a href="#">About</a>
 					</li>
-					<li className={navbar_li_class}>
+					<li className={navbar_li_classes}>
 						<a href="#">Projects</a>
 					</li>
-					<li className={navbar_li_class}>
+					<li className={navbar_li_classes}>
 						<a href="#">Contact</a>
 					</li>
 				</ul>
