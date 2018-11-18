@@ -1,0 +1,87 @@
+.Navbar {
+    width: 100%;
+    position: fixed;
+    list-style: none;
+    background-color: #333;
+    height: 60px;
+    text-align: left;
+}
+
+.Navbar li {
+    display: inline-block;
+    margin: 15px 3%;
+    margin-right: 0;
+}
+
+.Navbar li a:link,
+.Navbar li a:visited {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    border-bottom: 2px solid transparent;
+    border-top: 2px solid transparent;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.Navbar li a:hover,
+.Navbar li a:active {
+    border-top: 2px solid #e67e22;
+    border-bottom: 2px solid #e67e22;
+    color: #e67e22;
+}
+
+.toggle svg{
+    color: #FFF;
+    height: 25px;
+    width: 25px;
+    margin-top: 18px;
+    margin-right: 30px;
+    float: right;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.toggle svg:hover,
+.toggle svg:active{
+    color: #e67e22;
+}
+
+@media (max-width: 767px) {
+    .Navbar .toggle_show{
+        display: block;
+    }
+    
+    /* .Navbar .toggle_hide{
+        display: none;
+    } */
+    
+    .toggle_height{
+        height: 180px;
+    }
+    .Navbar{
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        z-index: 100;
+    }
+
+    .Navbar li{
+        width: 100%;
+        background-color: #333;
+        margin: 0;
+        text-align: center;
+        display: none;
+    }
+
+    .toggle svg{
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    .toggle svg{
+        display: none;
+    }
+}

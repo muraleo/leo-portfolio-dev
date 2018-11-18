@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 
-import Navbar from "./components/Navbar/navbar";
+import Navbar from "./containers/Navbar/navbar";
 import About from "./components/About/about";
 import Contact from "./components/Contact/contact";
 import Home from "./components/Home/home";
