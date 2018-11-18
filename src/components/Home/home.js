@@ -11,7 +11,9 @@ const home = props => {
 					</h1>
 					<h1>A full-stack developer</h1>
 				</div>
-				<a href="#about">View More</a>
+				<a href="#about" onClick={() => props.clicked("about")}>
+					View More
+				</a>
 			</div>
 		</div>
 	);

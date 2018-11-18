@@ -3,7 +3,7 @@ import classes from "./about.module.css";
 
 const about = props => {
 	return (
-		<div className={classes.about}>
+		<div id="about" className={classes.about}>
 			<p>About</p>
 		</div>
 	);

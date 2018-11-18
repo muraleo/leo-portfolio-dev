@@ -5,50 +5,13 @@ import { FaBars } from "react-icons/fa";
 class Navbar extends Component {
 	state = {
 		toggle: false,
-		nav_buttons: [
-			{
-				name: "home",
-				link: "#home",
-				active: true
-			},
-			{
-				name: "about",
-				link: "#about",
-				active: false
-			},
-			{
-				name: "projects",
-				link: "#projects",
-				active: false
-			},
-			{
-				name: "contact",
-				link: "#contact",
-				active: false
-			}
-		]
+		nav_buttons: this.props.nav_buttons
 	};
 
 	toggleNavbar = () => {
 		this.setState({
 			...this.state,
 			toggle: !this.state.toggle
-		});
-	};
-
-	updateActiveNavButton = name => {
-		let updated_nav_buttons = this.state.nav_buttons;
-		for (let idx = 0; idx < updated_nav_buttons.length; idx++) {
-			if (updated_nav_buttons[idx].name === name) {
-				updated_nav_buttons[idx].active = true;
-			} else {
-				updated_nav_buttons[idx].active = false;
-			}
-		}
-		console.log(updated_nav_buttons);
-		this.setState({
-			...this.state,
-			nav_buttons: updated_nav_buttons
 		});
 	};
 
@@ -65,7 +28,7 @@ class Navbar extends Component {
 						<a
 							id={classes.active}
 							href={e.link}
-							onClick={() => this.updateActiveNavButton(e.name)}
+							onClick={() => this.props.clicked(e.name)}
 						>
 							{e.name}
 						</a>
@@ -76,7 +39,7 @@ class Navbar extends Component {
 					<li
 						key={e.name}
 						className={navbar_li_classes}
-						onClick={() => this.updateActiveNavButton(e.name)}
+						onClick={() => this.props.clicked(e.name)}
 					>
 						<a href={e.link}>{e.name}</a>
 					</li>
