@@ -1,0 +1,46 @@
+.home{
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("../../assets/images/home-background-min.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("../../assets/images/home-background-min.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.hero_text_box {
+    position: absolute;
+    width: 100vw;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.home h1{
+    color: #c0c0c0;
+    font-family: 'Allerta Stencil', sans-serif;
+}
+
+.home h1 span{
+    color: #fff;
+}
+
+.home .title{
+    margin-bottom: 100px;
+}
+
+.home a{
+    border: 2px solid #cacaca;
+    padding: 10px;
+    color: #cacaca;
+    text-decoration: none;
+    top: 5%;
+    transition: all 0.5s;
+    font-size: 20px;
+}
+
+.home a:hover{
+    color: #984b43;
+    border: 2px solid #984b43;
+}

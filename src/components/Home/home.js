@@ -3,8 +3,16 @@ import classes from "./home.module.css";
 
 const home = props => {
 	return (
-		<div>
-			<p>Home</p>
+		<div className={classes.home}>
+			<div className={classes.hero_text_box}>
+				<div className={classes.title}>
+					<h1>
+						Hi, I'm <span>YINGNAN LI</span>
+					</h1>
+					<h1>A full-stack developer</h1>
+				</div>
+				<a href="#">View More</a>
+			</div>
 		</div>
 	);
 };

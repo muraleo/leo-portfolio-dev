@@ -2,7 +2,7 @@
     width: 100%;
     position: fixed;
     list-style: none;
-    background-color: #333;
+    background-color: #18121e;
     height: 60px;
     text-align: left;
     transition: height 0.3s;
@@ -29,9 +29,9 @@
 
 .Navbar li a:hover,
 .Navbar li a:active {
-    border-top: 2px solid #e67e22;
-    border-bottom: 2px solid #e67e22;
-    color: #e67e22;
+    border-top: 2px solid #984b43;
+    border-bottom: 2px solid #984b43;
+    color: #984b43;
 }
 
 .toggle svg{
@@ -47,7 +47,13 @@
 
 .toggle svg:hover,
 .toggle svg:active{
-    color: #e67e22;
+    color: #984b43;
+}
+
+#active{
+    border-top: 2px solid #984b43;
+    border-bottom: 2px solid #984b43;
+    color: #984b43;
 }
 
 @media (max-width: 767px) {
@@ -65,7 +71,7 @@
 
     .Navbar li{
         width: 100%;
-        background-color: #333;
+        background-color: #18121e;
         margin: 0;
         padding-bottom: 20px;
         text-align: center;
