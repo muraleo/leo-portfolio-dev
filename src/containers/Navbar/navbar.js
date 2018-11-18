@@ -3,25 +3,13 @@ import classes from "./navbar.module.css";
 import { FaBars } from "react-icons/fa";
 
 class Navbar extends Component {
-	state = {
-		toggle: false,
-		nav_buttons: this.props.nav_buttons
-	};
-
-	toggleNavbar = () => {
-		this.setState({
-			...this.state,
-			toggle: !this.state.toggle
-		});
-	};
-
 	render() {
-		let navbar_classes = this.state.toggle
+		let navbar_classes = this.props.toggle
 			? [classes.Navbar, classes.toggle_height].join(" ")
 			: classes.Navbar;
-		let navbar_li_classes = this.state.toggle ? classes.toggle_show : "";
+		let navbar_li_classes = this.props.toggle ? classes.toggle_show : "";
 
-		let navbar_buttons = this.state.nav_buttons.map(e => {
+		let navbar_buttons = this.props.nav_buttons.map(e => {
 			if (e.active) {
 				return (
 					<li key={e.name} className={navbar_li_classes}>
@@ -52,8 +40,7 @@ class Navbar extends Component {
 				<ul className={navbar_classes}>
 					<a
 						className={classes.toggle}
-						onClick={() => this.toggleNavbar()}
-						href="#"
+						onClick={() => this.props.toggleNavbar()}
 					>
 						<FaBars />
 					</a>

@@ -9,6 +9,7 @@ import Projects from "./components/Projects/projects";
 
 class App extends Component {
 	state = {
+		toggle: false,
 		nav_buttons: [
 			{
 				name: "home",
@@ -44,7 +45,15 @@ class App extends Component {
 		}
 		this.setState({
 			...this.state,
-			nav_buttons: updated_nav_buttons
+			nav_buttons: updated_nav_buttons,
+			toggle: false
+		});
+	};
+
+	toggleNavbar = () => {
+		this.setState({
+			...this.state,
+			toggle: !this.state.toggle
 		});
 	};
 
@@ -54,6 +63,8 @@ class App extends Component {
 				<Navbar
 					nav_buttons={this.state.nav_buttons}
 					clicked={this.updateActiveNavButton}
+					toggle={this.state.toggle}
+					toggleNavbar={this.toggleNavbar}
 				/>
 				<Home clicked={this.updateActiveNavButton} />
 				<About />
