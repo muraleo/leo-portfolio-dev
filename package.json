@@ -2,7 +2,7 @@
   "name": "leo-porfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://muraleo.github.io/leo-portfolio",
+  "homepage": "http://muraleo.github.io/leo-portfolio",
   "dependencies": {
     "bootstrap": ">=4.1.2",
     "gh-pages": "^2.0.1",
