@@ -7,3 +7,9 @@
     padding-top: 100px;
     color: #18121E;
 }
+
+@media(max-width: 767px){
+    .projects{
+        height: 165vh;
+    }
+}
