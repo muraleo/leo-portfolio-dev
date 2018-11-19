@@ -37,3 +37,9 @@
     transform: rotateY(45deg) scale(1.2);
     transition: all 0.3s;
 }
+
+@media(max-width:767px){
+    .about{
+        height: 150vh;
+    }
+}
