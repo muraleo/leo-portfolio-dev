@@ -8,6 +8,10 @@
     color: #18121E;
 }
 
+.project_carousel img{
+    width: 100%;
+}
+
 @media(max-width: 767px){
     .projects{
         height: 165vh;

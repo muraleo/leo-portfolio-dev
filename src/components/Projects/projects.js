@@ -10,21 +10,65 @@ import {
 	Modal,
 	ModalHeader,
 	ModalBody,
-	ModalFooter
+	ModalFooter,
+	Carousel,
+	CarouselItem,
+	CarouselControl,
+	CarouselIndicators,
+	CarouselCaption
 } from "reactstrap";
 import BurgerBuilderImage from "../../assets/images/burger_builder-min.png";
 import Omnifood from "../../assets/images/omnifood-min.png";
 import EwLandingPage from "../../assets/images/ew_landing_page-min.png";
 import EwCheckout from "../../assets/images/ew_checkout_1-min.png";
+import EwLogin from "../../assets/images/ew_login-min.png";
+import EwCheckout1 from "../../assets/images/ew_checkout_1-min.png";
+import EwCheckout2 from "../../assets/images/ew_checkout_2-min.png";
+import EwCheckout3 from "../../assets/images/ew_checkout_3-min.png";
+import EwCheckout4 from "../../assets/images/ew_checkout_4-min.png";
+
+const items = [
+	{
+		src: EwCheckout1,
+		altText: "Checkout 1",
+		caption: ""
+	},
+	{
+		src: EwCheckout2,
+		altText: "Checkout 2",
+		caption: ""
+	},
+	{
+		src: EwCheckout3,
+		altText: "Checkout 3",
+		caption: ""
+	},
+	{
+		src: EwCheckout4,
+		altText: "Checkout 4",
+		caption: ""
+	},
+	{
+		src: EwLogin,
+		altText: "Checkout 5",
+		caption: ""
+	}
+];
 
 class Projects extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			modal: false
+			modal: false,
+			activeIndex: 0
 		};
 
 		this.toggle = this.toggle.bind(this);
+		this.next = this.next.bind(this);
+		this.previous = this.previous.bind(this);
+		this.goToIndex = this.goToIndex.bind(this);
+		this.onExiting = this.onExiting.bind(this);
+		this.onExited = this.onExited.bind(this);
 	}
 
 	toggle() {
@@ -32,7 +76,57 @@ class Projects extends Component {
 			modal: !this.state.modal
 		});
 	}
+
+	onExiting() {
+		this.animating = true;
+	}
+
+	onExited() {
+		this.animating = false;
+	}
+
+	next() {
+		if (this.animating) return;
+		const nextIndex =
+			this.state.activeIndex === items.length - 1
+				? 0
+				: this.state.activeIndex + 1;
+		this.setState({ activeIndex: nextIndex });
+	}
+
+	previous() {
+		if (this.animating) return;
+		const nextIndex =
+			this.state.activeIndex === 0
+				? items.length - 1
+				: this.state.activeIndex - 1;
+		this.setState({ activeIndex: nextIndex });
+	}
+
+	goToIndex(newIndex) {
+		if (this.animating) return;
+		this.setState({ activeIndex: newIndex });
+	}
+
 	render() {
+		const { activeIndex } = this.state;
+
+		const slides = items.map(item => {
+			return (
+				<CarouselItem
+					onExiting={this.onExiting}
+					onExited={this.onExited}
+					key={item.src}
+					className={classes.project_carousel}
+				>
+					<img src={item.src} alt={item.altText} />
+					<CarouselCaption
+						captionText={item.caption}
+						captionHeader={item.caption}
+					/>
+				</CarouselItem>
+			);
+		});
 		return (
 			<div id="projects" className={classes.projects}>
 				<h1>PROJECTS</h1>
@@ -118,29 +212,37 @@ class Projects extends Component {
 						isOpen={this.state.modal}
 						toggle={this.toggle}
 						className={this.props.className}
+						size="lg"
+						style={{ "margin-top": "10%" }}
 					>
 						<ModalHeader toggle={this.toggle}>
-							Modal title
+							Everlasting Wardrobe Sign In / Checkout Page
 						</ModalHeader>
 						<ModalBody>
-							Lorem ipsum dolor sit amet, consectetur adipisicing
-							elit, sed do eiusmod tempor incididunt ut labore et
-							dolore magna aliqua. Ut enim ad minim veniam, quis
-							nostrud exercitation ullamco laboris nisi ut aliquip
-							ex ea commodo consequat. Duis aute irure dolor in
-							reprehenderit in voluptate velit esse cillum dolore
-							eu fugiat nulla pariatur. Excepteur sint occaecat
-							cupidatat non proident, sunt in culpa qui officia
-							deserunt mollit anim id est laborum.
+							<Carousel
+								activeIndex={activeIndex}
+								next={this.next}
+								previous={this.previous}
+							>
+								<CarouselIndicators
+									items={items}
+									activeIndex={activeIndex}
+									onClickHandler={this.goToIndex}
+								/>
+								{slides}
+								<CarouselControl
+									direction="prev"
+									directionText="Previous"
+									onClickHandler={this.previous}
+								/>
+								<CarouselControl
+									direction="next"
+									directionText="Next"
+									onClickHandler={this.next}
+								/>
+							</Carousel>
 						</ModalBody>
-						<ModalFooter>
-							<Button color="primary" onClick={this.toggle}>
-								Do Something
-							</Button>{" "}
-							<Button color="secondary" onClick={this.toggle}>
-								Cancel
-							</Button>
-						</ModalFooter>
+						<ModalFooter />
 					</Modal>
 				</div>
 			</div>
