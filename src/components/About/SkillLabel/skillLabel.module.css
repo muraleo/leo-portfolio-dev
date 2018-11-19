@@ -1,5 +1,5 @@
 .skillLable{
-    display: inline-block;
+    display: inline-flex;
     padding: 8px 5px;
     background-color: #616161;
     color: #999;
@@ -19,6 +19,8 @@
     position: relative;
     overflow: hidden;
     width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .skillLable:before,
