@@ -176,7 +176,9 @@ class Projects extends Component {
 									src={EwLandingPage}
 									alt="Everlasting Wardrobe landing page screenshot"
 								/>
-								<p>Everlasting Wardrobe Landing Page</p>
+								<p>
+									Everlasting Wardrobe Landing Page (Partial)
+								</p>
 								<Skills
 									skill_list={[
 										"Rails",
