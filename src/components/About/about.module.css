@@ -3,5 +3,37 @@
 }
 
 .about h1{
-    padding-top: 60px;
+    padding-top: 100px;
+    color: #18121E;
+}
+
+.about .subtitle{
+    color: #616161;
+    padding-top: 40px;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: 'Allerta Stencil', sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 35px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #cacaca;
+}
+
+.about .subname{
+    color: #293347;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    margin-top: 24px;
+}
+
+.about svg{
+    width: 100px;
+    height: 100px;
+    color: #984b43;
+}
+
+.about svg:hover{
+    transform: rotateY(45deg) scale(1.2);
+    transition: all 0.3s;
 }
