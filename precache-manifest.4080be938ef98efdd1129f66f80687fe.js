@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/leo-portfolio/static/media/omnifood-min.2e5c84f6.png"
   },
   {
-    "revision": "da9d587edbc1e904ff66",
-    "url": "/leo-portfolio/static/css/main.88d19b3e.chunk.css"
+    "revision": "152c7b9134cd3f110c5e",
+    "url": "/leo-portfolio/static/css/main.2453d540.chunk.css"
   },
   {
     "revision": "3375aae0c03df248b32a00aef15fca3e",
@@ -28,8 +28,8 @@ self.__precacheManifest = [
     "url": "/leo-portfolio/static/media/burger_builder-min.8c125d93.png"
   },
   {
-    "revision": "da9d587edbc1e904ff66",
-    "url": "/leo-portfolio/static/js/main.da9d587e.chunk.js"
+    "revision": "152c7b9134cd3f110c5e",
+    "url": "/leo-portfolio/static/js/main.152c7b91.chunk.js"
   },
   {
     "revision": "24834250822aa84f2e16ca873b8ccdbe",
@@ -52,7 +52,7 @@ self.__precacheManifest = [
     "url": "/leo-portfolio/static/css/1.2d641e84.chunk.css"
   },
   {
-    "revision": "6b83b083c41752832bd717131572ddad",
+    "revision": "0e9fee27521aa395c5d111b7c549df97",
     "url": "/leo-portfolio/index.html"
   }
 ];
