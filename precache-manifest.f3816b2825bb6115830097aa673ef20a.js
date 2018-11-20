@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "8c125d93fd71a15faaa6b8c1f14d7bdb",
-    "url": "/leo-portfolio/static/media/burger_builder-min.8c125d93.png"
+    "revision": "2e5c84f604b76be41fe9f93a121ebb8c",
+    "url": "/leo-portfolio/static/media/omnifood-min.2e5c84f6.png"
   },
   {
-    "revision": "7fbc814626a0210e1e18",
-    "url": "/leo-portfolio/static/css/main.5a7b97a8.chunk.css"
+    "revision": "da9d587edbc1e904ff66",
+    "url": "/leo-portfolio/static/css/main.88d19b3e.chunk.css"
   },
   {
     "revision": "3375aae0c03df248b32a00aef15fca3e",
@@ -24,16 +24,12 @@ self.__precacheManifest = [
     "url": "/leo-portfolio/static/media/ew_checkout_1-min.73cde5f6.png"
   },
   {
-    "revision": "ddd158cc031317b1f170c8096902ba7e",
-    "url": "/leo-portfolio/static/media/home-background-min.ddd158cc.jpg"
+    "revision": "8c125d93fd71a15faaa6b8c1f14d7bdb",
+    "url": "/leo-portfolio/static/media/burger_builder-min.8c125d93.png"
   },
   {
-    "revision": "7fbc814626a0210e1e18",
-    "url": "/leo-portfolio/static/js/main.7fbc8146.chunk.js"
-  },
-  {
-    "revision": "db0c5592a5e2b9213a9c05921998b88f",
-    "url": "/leo-portfolio/static/media/omnifood-min.db0c5592.png"
+    "revision": "da9d587edbc1e904ff66",
+    "url": "/leo-portfolio/static/js/main.da9d587e.chunk.js"
   },
   {
     "revision": "24834250822aa84f2e16ca873b8ccdbe",
@@ -56,7 +52,7 @@ self.__precacheManifest = [
     "url": "/leo-portfolio/static/css/1.2d641e84.chunk.css"
   },
   {
-    "revision": "2ee2eae917a89bf03fdeefcfa0adfa70",
+    "revision": "6b83b083c41752832bd717131572ddad",
     "url": "/leo-portfolio/index.html"
   }
 ];
