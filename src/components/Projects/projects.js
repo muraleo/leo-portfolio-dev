@@ -145,6 +145,7 @@ class Projects extends Component {
 								<a
 									href="https://leo-burger-builder.firebaseapp.com/"
 									target="_blank"
+									rel="noreferrer"
 								>
 									View Website
 								</a>
@@ -163,6 +164,7 @@ class Projects extends Component {
 								<a
 									href="https://muraleo.github.io/omnifood/"
 									target="_blank"
+									rel="noreferrer"
 								>
 									View Website
 								</a>
@@ -189,6 +191,7 @@ class Projects extends Component {
 								<a
 									href="https://www.everlastingwardrobe.com/"
 									target="_blank"
+									rel="noreferrer"
 								>
 									View Website
 								</a>
@@ -218,7 +221,7 @@ class Projects extends Component {
 						style={{ "margin-top": "10%" }}
 					>
 						<ModalHeader toggle={this.toggle}>
-							Everlasting Wardrobe Sign In / Checkout Page
+							Everlasting Wardrobe Login and Checkout Page
 						</ModalHeader>
 						<ModalBody>
 							<Carousel

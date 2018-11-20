@@ -1,6 +1,5 @@
 .home{
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("../../assets/images/home-background-min.jpg");
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("../../assets/images/home-background-min.jpg");
+    background-image: url("https://res.cloudinary.com/kaojichi/image/upload/v1542675927/home-background-min.png.jpg");
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -16,7 +15,7 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     animation-name: slidefade;
-    animation-duration: 2s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
 }
 

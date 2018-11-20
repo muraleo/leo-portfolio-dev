@@ -37,12 +37,17 @@ const contact = props => {
 						<a
 							href="https://www.linkedin.com/in/yingnan-li-leo/"
 							target="_blank"
+							rel="noreferrer"
 						>
 							<TiSocialLinkedinCircular />
 						</a>
 					</Col>
 					<Col xs="4" sm="4" md="2">
-						<a href="https://github.com/muraleo" target="_blank">
+						<a
+							href="https://github.com/muraleo"
+							target="_blank"
+							rel="noreferrer"
+						>
 							<GoMarkGithub style={{ width: "63px" }} />
 						</a>
 					</Col>
@@ -50,6 +55,7 @@ const contact = props => {
 						<a
 							href="https://www.facebook.com/yingnan.li.73"
 							target="_blank"
+							rel="noreferrer"
 						>
 							<TiSocialFacebookCircular />
 						</a>

@@ -12,6 +12,15 @@
     width: 100%;
 }
 
+.projects .modal-title{
+    font-family: 'Lato', sans-serif;
+    color: #18121E;
+}
+
+.modal-header .close{
+    display: none;
+}
+
 @media(max-width: 767px){
     .projects{
         height: 165vh;
